@@ -50,7 +50,7 @@ test:
 production:
   <<: *default
   database: aws_test_production
-  username: rails_user
+  username: masahiro_aws
   password: <%= ENV['AWS_TEST_DATABASE_PASSWORD'] %>
   host: mumu-mysql.ce40epnz2lq9.ap-northeast-1.rds.amazonaws.com
   database: mumu-mysql
