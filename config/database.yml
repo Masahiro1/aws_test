@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: rails_user
   password: <%= ENV['AWS_TEST_DATABASE_PASSWORD'] %>
-  #socket: /var/lib/mysql/mysql.sock
+  socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
@@ -51,6 +51,6 @@ production:
   <<: *default
   database: aws_test_production
   username: root
-  password:
+  password: <%= ENV['AWS_TEST_DATABASE_PASSWORD'] %>
   host: mumu-mysql.ce40epnz2lq9.ap-northeast-1.rds.amazonaws.com
   database: mumu-mysql
