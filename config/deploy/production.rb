@@ -6,8 +6,8 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-server '18.179.170.38', user: 'masahiro_aws', roles: %w{app db web}
-set :ssh_options, keys: '~/.ssh/mumu_key_rsa' 
+server '18.179.170.38', user: 'masahiro', roles: %w{app db web}
+set :ssh_options, keys: '~/.ssh/mumu_key_rsa'
 
 # role-based syntax
 # ==================
